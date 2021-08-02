@@ -17,9 +17,6 @@ public class LessonTwoTaskThree {
             System.out.println("yes");
         } else {
             System.out.println("no");
-
         }
-
-
     }
 }
