@@ -7,16 +7,15 @@ public class LessonTwoTaskOne {
         int a = 60;
         int b = 30;
 
-        if (a + b < 180){
+        if (a + b < 180) {
             System.out.print("triangle exist ");
 
-            if (a+b == 90){
+            if (a + b == 90) {
                 System.out.println("and it is rectangular");
             }
 
         } else {
             System.out.println("triangle not exist ");
         }
-
     }
 }
