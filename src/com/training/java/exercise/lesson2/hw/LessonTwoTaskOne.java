@@ -1,6 +1,6 @@
 package com.training.java.exercise.lesson2.hw;
 
-public class LessonTwo {
+public class LessonTwoTaskOne {
 
     public static void main(String[] args) {
 
