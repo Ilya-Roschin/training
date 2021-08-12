@@ -133,7 +133,6 @@ public class LessonFiveTaskTwelve {
 
             for (int j = result.length - 1; j >= 0; j--) {
                 System.out.print(result[j]);
-
             }
 
         } else {
