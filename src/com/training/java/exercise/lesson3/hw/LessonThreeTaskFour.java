@@ -1,7 +1,5 @@
 package com.training.java.exercise.lesson3.hw;
 
-import com.sun.org.apache.xpath.internal.objects.XString;
-
 import static java.lang.Math.pow;
 
 public class LessonThreeTaskFour {
@@ -10,10 +8,10 @@ public class LessonThreeTaskFour {
 
         int a = 200;
 
-        System.out.println(calculateMultipl(a));
+        System.out.println(calculateCompositionOfSquares(a));
     }
 
-    public static String calculateMultipl(int number) {
+    public static String calculateCompositionOfSquares(int number) {
 
         int rightnumb = 0;
         int mult = 1;
@@ -38,8 +36,6 @@ public class LessonThreeTaskFour {
             rightnumb++;
         }
 
-        String result = leftnumb + " * 10 ^ " + rightnumb;
-
-        return result;
+        return leftnumb + " * 10 ^ " + rightnumb;
     }
 }

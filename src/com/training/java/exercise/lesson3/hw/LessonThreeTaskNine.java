@@ -1,22 +1,14 @@
 package com.training.java.exercise.lesson3.hw;
 
+import com.training.java.exercise.reader.Reader;
+
 public class LessonThreeTaskNine {
 
     public static void main(String[] args) {
 
-        int a = 15;
-        int n = a / 2;
-        int[] arr = new int[n];
-        int t = 1;
+        Reader reader = new Reader();
+        int n = reader.readIntFromConsole();
+        System.out.println(n/2);
 
-        for (int i = 0; i < n; i++) {
-
-            arr[i] = t;
-            t += 2;
-        }
-
-        for (int i : arr) {
-            System.out.print(i + ", ");
-        }
     }
 }

@@ -1,5 +1,7 @@
 package com.training.java.exercise.lesson3.lecture;
 
+import com.training.java.exercise.lesson4.lecture.LessonFourTaskOne;
+
 import java.util.Scanner;
 
 /**
@@ -9,6 +11,7 @@ public class LessonThreeTaskTwo {
 
     public static void main(String[] args) {
 
+        LessonFourTaskOne lessonFourTaskOne = new LessonFourTaskOne(100);
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();

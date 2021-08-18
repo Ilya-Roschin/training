@@ -14,14 +14,21 @@ public class LessonThreeTaskTwo {
             a = b;
             b = t;
         }
-
-        while (a <= b) {
-            if (a > 2) {
-                System.out.println(a);
-            } else {
-                System.out.println(-a);
-            }
-            a += h;
-        }
+        calculateFunctionValue(a, b, h);
     }
+    private static void calculateFunctionValue(int numb1, int numb2, int numb3) {
+
+        while (numb1 <= numb2) {
+            if (numb1 > 2) {
+                System.out.println(numb1);
+            } else {
+                System.out.println(-numb1);
+            }
+            numb1 += numb3;
+        }
+
+    }
+
+
 }
+

@@ -1,8 +1,5 @@
 package com.training.java.exercise.lesson3.hw;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class LessonThreeTaskEight {
 
     public static void main(String[] args) {

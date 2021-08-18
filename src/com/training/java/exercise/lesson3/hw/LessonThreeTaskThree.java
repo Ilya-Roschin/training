@@ -1,5 +1,7 @@
 package com.training.java.exercise.lesson3.hw;
 
+import static java.lang.Math.pow;
+
 public class LessonThreeTaskThree {
 
     public static void main(String[] args) {
@@ -14,7 +16,7 @@ public class LessonThreeTaskThree {
         int sum = 0;
 
         for (int i = 0; i <= number; i++) {
-            sum += Math.pow(i, 2);
+            sum += pow(i, 2);
         }
 
         return sum;
