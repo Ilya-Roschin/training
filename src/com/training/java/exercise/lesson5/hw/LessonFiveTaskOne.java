@@ -1,7 +1,5 @@
 package com.training.java.exercise.lesson5.hw;
 
-import javafx.scene.shape.SVGPath;
-
 import java.util.Scanner;
 
 public class LessonFiveTaskOne {

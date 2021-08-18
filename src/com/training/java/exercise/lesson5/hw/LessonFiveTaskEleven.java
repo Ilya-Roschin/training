@@ -7,48 +7,53 @@ public class LessonFiveTaskEleven {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        int N = scanner.nextInt();
-        int M = scanner.nextInt();
+        int n = scanner.nextInt();
+        int m = scanner.nextInt();
         scanner.close();
-
-        switch (N) {
-            case (11):
-                System.out.print("валет ");
+        String dignity;
+        String lear;
+        switch (n) {
+            case 11:
+                dignity = "Валет";
                 break;
-            case (12):
-                System.out.print("дама ");
+            case 12:
+                dignity = "Дама ";
                 break;
-            case (13):
-                System.out.print("король ");
+            case 13:
+                dignity = "Король ";
                 break;
-            case (14):
-                System.out.print("туз ");
+            case 14:
+                dignity = "Туз ";
+                break;
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+                dignity = n + " ";
                 break;
             default:
-                if (N >= 6 && N <= 10) {
-                    System.out.println(N + " ");
-                } else {
-                    System.out.println("incorrect dignity lear ");
-                }
+                dignity = "incorrect dignity ";
                 break;
         }
 
-        switch (M) {
-            case (1):
-                System.out.print("пики ");
+        switch (m) {
+            case 1:
+                lear = "Пики ";
                 break;
-            case (2):
-                System.out.print("трефы ");
+            case 2:
+                lear = "Трефы ";
                 break;
-            case (3):
-                System.out.print("бубны ");
+            case 3:
+                lear = "Бубны ";
                 break;
-            case (4):
-                System.out.print("черви ");
+            case 4:
+                lear = "Черви ";
                 break;
             default:
-                System.out.print("incorrect lear ");
+                lear = "incorrect lear ";
                 break;
         }
+        System.out.println(dignity + lear);
     }
 }

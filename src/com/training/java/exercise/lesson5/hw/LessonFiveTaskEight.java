@@ -1,9 +1,5 @@
 package com.training.java.exercise.lesson5.hw;
 
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
-import com.sun.scenario.effect.impl.state.AccessHelper;
-
-import javax.swing.*;
 import java.util.Scanner;
 
 public class LessonFiveTaskEight {
@@ -34,10 +30,9 @@ public class LessonFiveTaskEight {
 
             for (int i = 1; i < array.length; i++) {
                 if (array[i] < array[i - 1]) {
-                    int t;
-                    t = array[i - 1];
+                    int temp = array[i - 1];
                     array[i - 1] = array[i];
-                    array[i] = t;
+                    array[i] = temp;
                 }
             }
         }

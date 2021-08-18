@@ -12,9 +12,9 @@ public class LessonFiveTaskTwo {
 
         if (number >= 60) {
             System.out.println("Great");
-        } else if (number >= 30 && number < 60) {
+        } else if (number >= 30) {
             System.out.println("Good");
-        } else if (number >= 17 && number < 30) {
+        } else if (number >= 17) {
             System.out.println("satisfyingly");
         } else {
             System.out.println("bad");

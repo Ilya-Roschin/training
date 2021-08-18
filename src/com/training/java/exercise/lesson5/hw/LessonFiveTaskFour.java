@@ -13,14 +13,14 @@ public class LessonFiveTaskFour {
 
         System.out.println("way 1:");
 
+        final String message = "max number: ";
         if (number1 >= number2) {
-            System.out.println("max number number: " + number1);
+            System.out.println(message + number1);
         } else {
-            System.out.println("max number number: " + number2);
+            System.out.println(message + number2);
         }
 
-        String result = (number1 >= number2) ? "max number number: " + number1 : "max number number: " + number2;
-        System.out.println("way 2:");
-        System.out.println(result);
+        String result = (number1 >= number2) ? message + number1 : message + number2;
+        System.out.println("way 2:" + "\n"+ result);
     }
 }

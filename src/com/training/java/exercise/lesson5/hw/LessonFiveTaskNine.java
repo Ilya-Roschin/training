@@ -9,17 +9,34 @@ public class LessonFiveTaskNine {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         scanner.close();
+        String result;
 
-        if (number == 12 || number == 1 || number == 2) {
-            System.out.println("Winter");
-        } else if (number > 2 && number < 6) {
-            System.out.println("Spring");
-        } else if (number >= 6 && number < 9) {
-            System.out.println("Summer");
-        } else if (number >= 9 && number < 12) {
-            System.out.println("autumn");
-        } else {
-            System.out.println("incorrect number");
+        switch (number) {
+            case 1:
+            case 2:
+            case 12:
+                result = "Winter ";
+                break;
+            case 3:
+            case 4:
+            case 5:
+                result = "Spring ";
+                break;
+            case 6:
+            case 7:
+            case 8:
+                result = "Summer ";
+                break;
+            case 9:
+            case 10:
+            case 11:
+                result = "Autumn";
+                break;
+            default:
+                result = "Default month";
+                break;
         }
+
+        System.out.println(result);
     }
 }
