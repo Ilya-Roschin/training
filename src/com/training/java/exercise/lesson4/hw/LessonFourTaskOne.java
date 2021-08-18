@@ -8,12 +8,12 @@ public class LessonFourTaskOne {
 
         int sizeOfArray = 5;
         int target = 6;
-        int[] array = arrayInicialization(sizeOfArray);
+        int[] array = arrayInitialization(sizeOfArray);
 
         System.out.println(findIndex(sizeOfArray, array, target));
     }
 
-    private static int[] arrayInicialization(int sizeOfArray) {
+    private static int[] arrayInitialization(int sizeOfArray) {
 
         int[] arr = new int[sizeOfArray];
 
@@ -22,9 +22,7 @@ public class LessonFourTaskOne {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < sizeOfArray; i++) {
-            int number = 0;
-            number = scanner.nextInt();
-            arr[i] = number;
+            arr[i] = scanner.nextInt();
         }
         scanner.close();
 
@@ -34,7 +32,7 @@ public class LessonFourTaskOne {
     private static String findIndex(int sizeOfArray, int[] array, int target) {
 
         boolean waysForTarget = false;
-        String result = null;
+        String result = "no answer";
 
         for (int i = 0; i < sizeOfArray; i++) {
             for (int j = 0; j < sizeOfArray; j++) {
