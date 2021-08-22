@@ -7,35 +7,41 @@ public class TrainingTable {
 
     public static void main(String[] args) {
 
-        System.out.println("Привет давай научимся считать ");
-
-        int numb1 = 0;
-        int numb2 = 0;
-        Random random = new Random();
-        int repeats = 0;
-        int mistake = 0;
-
-        Scanner scan = new Scanner(System.in);
-
-
-        while (repeats < 2 && mistake < 5) {
-
-            numb1 = random.nextInt(10);
-            numb2 = random.nextInt(10);
-            System.out.print(numb1 + " * " + numb2 + " = ");
-            int result = scan.nextInt();
-            if (result == numb1 * numb2) {
-                System.out.println("Верно");
-                repeats = 0;
-            } else {
-                mistake++;
-                repeats++;
-                System.out.println("Неверно");
-            }
-        }
-        scan.close();
+        run();
     }
 
+    private static int initialisationRandomNumber() {
+        Random random = new Random();
+        int number = 1 + random.nextInt(9);
+        return number;
+    }
+
+    private static boolean functionMistakes(int mistake, int repeat) {
+        return mistake < 5 && repeat < 2;
+    }
+
+    private static void run() {
+        System.out.println("Привет давай научимся считать ");
+        int mistake = 0;
+        int repeats = 0;
+        Scanner scan = new Scanner(System.in);
+
+        do {
+            int randomNumber1 = initialisationRandomNumber();
+            int randomNumber2 = initialisationRandomNumber();
+
+            System.out.print(randomNumber1 + " * " + randomNumber2 + " = ");
+            int result = scan.nextInt();
+            if (result == randomNumber1 * randomNumber2) {
+                System.out.println("Верно");
+                functionMistakes(mistake, 0);
+            } else {
+                functionMistakes(mistake++, repeats++);
+                System.out.println("Неверно");
+            }
+        } while (functionMistakes(mistake, repeats));
+        scan.close();
+    }
 
 }
 
