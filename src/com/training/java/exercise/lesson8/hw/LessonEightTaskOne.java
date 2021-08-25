@@ -4,11 +4,7 @@ import java.util.Scanner;
 
 public class LessonEightTaskOne {
 
-    public static void main(String[] args) {
-
-        run();
-    }
-
+    private static final char SPACE = ' ';
 
     private static String enterString() {
         Scanner scanner = new Scanner(System.in);
@@ -21,7 +17,7 @@ public class LessonEightTaskOne {
         int numberSpace = 0;
         int temp = 0;
         for (int i = 0; i < charArray.length - 1; i++) {
-            if (charArray[i] == ' ') {
+            if (charArray[i] == SPACE) {
                 temp++;
                 if (temp > numberSpace) {
                     numberSpace = temp;
@@ -33,7 +29,7 @@ public class LessonEightTaskOne {
         return numberSpace;
     }
 
-    private static void run() {
+     protected static void run() {
         String userString = enterString();
         char[] charArray = userString.toCharArray();
         System.out.println(findNumberSpace(charArray));

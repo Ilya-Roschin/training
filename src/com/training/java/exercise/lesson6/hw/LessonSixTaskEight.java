@@ -13,9 +13,9 @@ public class LessonSixTaskEight {
             }
         }
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] != min) {
-                System.out.println(array[i] + ", ");
+        for (int element : array) {
+            if (element != min) {
+                System.out.println(element + ", ");
                 }
             }
         }

@@ -9,7 +9,6 @@ public class LessonEightTaskFive {
         run();
     }
 
-
     private static String enterString() {
         Scanner scanner = new Scanner(System.in);
         String userString = scanner.nextLine();
@@ -20,20 +19,16 @@ public class LessonEightTaskFive {
     private static int findNumberSymbolA(String userString) {
         int numberSymbolA = 0;
         for (int i = 0; i < userString.length(); i++) {
-            if (userString.charAt(i) == 'a') {
+            if (userString.charAt(i) == Constants.LETTER_A) {
                 numberSymbolA++;
             }
         }
         return numberSymbolA;
     }
 
-    private static void outputResult(int numberSymbolA) {
-        System.out.println("number symbol 'a' = " + numberSymbolA);
-    }
-
     private static void run() {
         String userString = enterString();
         int numberSymbolA = findNumberSymbolA(userString);
-        outputResult(numberSymbolA);
+        System.out.println("number symbol 'a' = " + numberSymbolA);
     }
 }

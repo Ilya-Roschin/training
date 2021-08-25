@@ -20,6 +20,7 @@ public class LessonSevenTaskFive {
                 break;
             }
         }
-        System.out.println("Negative and odd numbers: " + negativeOdd + "\n" + "multiplication of positive numbers: " + multiplication);
+        System.out.println("Negative and odd numbers: " + negativeOdd + "\n" +
+                "multiplication of positive numbers: " + multiplication);
     }
 }

@@ -9,7 +9,6 @@ public class LessonEightTaskEight {
         rum();
     }
 
-
     private static String enterString() {
         Scanner scanner = new Scanner(System.in);
         String userString = scanner.nextLine();
@@ -18,12 +17,11 @@ public class LessonEightTaskEight {
     }
 
     private static int findIndexBiggestWord(String userString) {
-        String biggestWord = "";
         int indexFirstSymbol = 0;
         int wordLength = 0;
         int maxWordLength = 0;
         for (int i = 0; i < userString.length(); i++) {
-            if (userString.charAt(i) == ' ') {
+            if (userString.charAt(i) == Constants.SPACE) {
                 wordLength = 0;
                 continue;
             } else {
@@ -40,8 +38,7 @@ public class LessonEightTaskEight {
     private static void outputResult(int indexFirstSymbol, String userString) {
         int i = indexFirstSymbol;
         while (true) {
-
-            if (userString.charAt(i) != ' ') {
+            if (userString.charAt(i) != Constants.SPACE) {
                 System.out.print(userString.charAt(i));
             } else {
                 break;

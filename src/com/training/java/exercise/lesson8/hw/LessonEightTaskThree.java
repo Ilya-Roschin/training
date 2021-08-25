@@ -4,45 +4,23 @@ import java.util.Scanner;
 
 public class LessonEightTaskThree {
 
-    public static void main(String[] args) {
+    private static final String REGEX_FOR_SPACE = "\\s";
+    private static final String EMPTY_STRING = "";
 
-        run();
-    }
-
-
-    private static String enterString() {
+    private String enterString() {
         Scanner scanner = new Scanner(System.in);
         String userString = scanner.nextLine();
         scanner.close();
         return userString;
     }
 
-    private static String replaceGaps(String userString) {
-        return userString.replaceAll("\\s", "");
-    }
-
-    private static String reversString(String replacedString) {
-        return new StringBuilder(replacedString).reverse().toString();
-    }
-
-    private static boolean isStringsEquals(String replacedString, String reversedString) {
-        return replacedString.equals(reversedString);
-    }
-
-    private static void outputResult(boolean isEquals) {
-        if (isEquals) {
-            System.out.println("palindrome");
-        } else {
-            System.out.println("not palindrome");
-        }
-    }
-
-    private static void run() {
+    void run() {
         String userString = enterString();
-        String replacedString = replaceGaps(userString);
-        String reversedString = reversString(replacedString);
-        boolean isEquals = isStringsEquals(replacedString, reversedString);
-        outputResult(isEquals);
+        String replacedString = userString.replaceAll(REGEX_FOR_SPACE, EMPTY_STRING);
+        String reversedString = new StringBuilder(replacedString).reverse().toString();
+        boolean equality = replacedString.equals(reversedString);
+        String result = equality ? "palindrome" : "not palindrome";
+        System.out.println(result);
     }
 
 }

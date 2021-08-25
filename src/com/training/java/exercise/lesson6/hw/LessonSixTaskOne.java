@@ -1,7 +1,5 @@
 package com.training.java.exercise.lesson6.hw;
 
-import java.sql.Array;
-
 public class LessonSixTaskOne {
 
     public static void main(String[] args) {
@@ -10,9 +8,9 @@ public class LessonSixTaskOne {
         int number = 2;
         int sum = 0;
 
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] % number == 0) {
-                sum += array[i];
+        for (int element : array) {
+            if (element % number == 0) {
+                sum += element;
             }
         }
         System.out.println(sum);

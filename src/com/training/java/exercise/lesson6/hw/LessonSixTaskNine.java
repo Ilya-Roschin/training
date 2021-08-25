@@ -9,17 +9,18 @@ public class LessonSixTaskNine {
         int repeat = 0;
         int number = array[0];
 
-        for (int i = 0; i < array.length; i++) {
+        for (int j : array) {
             repeat = 0;
-            for (int j = 0; j < array.length; j++) {
-                if (array[i] == array[j]) {
+            for (int k : array) {
+                if (j == k) {
                     repeat++;
                     if (repeat > numberRepeat) {
                         numberRepeat = repeat;
-                        number = array[i];
-                    } else if (repeat == numberRepeat && number != array[i] && array[i] < number) {
-                       number = array[i];
+                        number = j;
+                    } else if (repeat == numberRepeat && j < number) {
+                        number = j;
                     }
+
                 }
             }
         }

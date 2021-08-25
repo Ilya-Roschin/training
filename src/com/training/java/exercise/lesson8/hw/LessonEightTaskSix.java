@@ -9,7 +9,6 @@ public class LessonEightTaskSix {
         run();
     }
 
-
     private static String enterString() {
         Scanner scanner = new Scanner(System.in);
         String userString = scanner.nextLine();
@@ -17,18 +16,20 @@ public class LessonEightTaskSix {
         return userString;
     }
 
-    private static String returnNewString(String userString) {
+    private static String returnNewString(String userString, int amountOfRepeats) {
         StringBuilder newString = new StringBuilder();
         for (int i = 0; i < userString.length(); i++) {
-            newString.append(userString.charAt(i));
-            newString.append(userString.charAt(i));
+            for (int j = 0; j < amountOfRepeats; j++) {
+                newString.append(userString.charAt(i));
+            }
+
         }
         return newString.toString();
     }
 
     private static void run() {
         String userString = enterString();
-        String newString = returnNewString(userString);
+        String newString = returnNewString(userString,3);
         System.out.println(newString);
     }
 

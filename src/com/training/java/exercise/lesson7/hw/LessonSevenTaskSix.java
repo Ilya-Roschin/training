@@ -31,6 +31,7 @@ public class LessonSevenTaskSix {
                     break;
                 case 0:
                     check = true;
+                    break;
                 default:
                     break;
             }

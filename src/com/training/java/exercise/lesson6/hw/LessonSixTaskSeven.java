@@ -9,8 +9,9 @@ public class LessonSixTaskSeven {
 
         double maxSum = array[0] + array[array.length - 1];
         for (int i = 1; i < array.length / 2; i++) {
-            if ((array[i] + array[array.length - i - 1]) > maxSum) {
-                maxSum = array[i] + array[array.length - i - 1];
+            final double v = array[i] + array[array.length - i - 1];
+            if (v > maxSum) {
+                maxSum = v;
             }
         }
         System.out.println(maxSum);

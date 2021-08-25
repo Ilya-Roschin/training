@@ -4,22 +4,21 @@ import java.util.Scanner;
 
 public class LessonEightTaskTen {
 
+    private static final char QUESTION_MARK = '?';
+    private static final char EXCLAMATION_POINT = '!';
+    private static final char POINT = '.';
+
     public static void main(String[] args) {
 
         run();
     }
 
-
-    private static void outputResult(int numberSentence) {
-        System.out.println(numberSentence);
-    }
-
     private static int findNumberSentence(String userString) {
         int numberSentence = 0;
         for (int i = 2; i <= userString.length(); i++) {
-            if (userString.charAt(i) == '?' || userString.charAt(i) == '.' ||
-                    userString.charAt(i) == '!' && userString.charAt(i - 1) == ' '
-                            && userString.charAt(i - 2) != ' ') {
+            if (userString.charAt(i) == QUESTION_MARK || userString.charAt(i) == POINT ||
+                    userString.charAt(i) == EXCLAMATION_POINT && userString.charAt(i - 1) == Constants.SPACE
+                            && userString.charAt(i - 2) != Constants.SPACE) {
                 numberSentence++;
             }
         }
@@ -36,6 +35,6 @@ public class LessonEightTaskTen {
     private static void run() {
         String userString = enterString();
         int numberSentence = findNumberSentence(userString);
-        outputResult(numberSentence);
+        System.out.println(numberSentence);
     }
 }

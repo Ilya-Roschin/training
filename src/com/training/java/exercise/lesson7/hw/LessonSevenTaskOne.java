@@ -18,7 +18,7 @@ public class LessonSevenTaskOne {
         }
 
         for (int i = numberOne; i <= numberTwo; i++) {
-            for(int j = i; j > 0; j--) {
+            for (int j = i; j > 0; j--) {
                 System.out.println(i);
             }
         }

@@ -7,7 +7,6 @@ public class LessonEightTaskFour {
         run();
     }
 
-
     private static String returnNewString(String string) {
         String stringResult = "";
         stringResult += string.charAt(7);
@@ -17,14 +16,10 @@ public class LessonEightTaskFour {
         return stringResult;
     }
 
-    private static void outputResult(String result) {
-        System.out.println(result);
-    }
-
     private static void run() {
         String string = "информатика";
         String result = returnNewString(string);
-        outputResult(result);
+        System.out.println(result);
     }
 }
 

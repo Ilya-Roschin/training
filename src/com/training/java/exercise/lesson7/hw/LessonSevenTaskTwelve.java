@@ -5,4 +5,11 @@ import java.util.Scanner;
 
 public class LessonSevenTaskTwelve {
 
+    public static void main(String[] args) {
+
+
+    }
+
+
+
 }

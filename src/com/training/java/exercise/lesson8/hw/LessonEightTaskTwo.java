@@ -4,35 +4,32 @@ import java.util.Scanner;
 
 public class LessonEightTaskTwo {
 
-    public static void main(String[] args) {
+    private static final char B_LETTER = 'b';
 
-        run();
-    }
-
-    private static String EnterString() {
+    private String enterString() {
         Scanner scanner = new Scanner(System.in);
         String userString = scanner.nextLine();
         scanner.close();
         return userString;
     }
 
-    private static int findNewArrayLength(char[] charArray) {
+    private int findNewArrayLength(char[] charArray) {
         int newArrayLength = charArray.length;
         for (char element : charArray) {
-            if (element == 'a') {
+            if (element == Constants.LETTER_A) {
                 newArrayLength++;
             }
         }
         return newArrayLength;
     }
 
-    private static char[] refactorCharArray(char[] charArray, int newArrayLength) {
+    private  char[] refactorCharArray(char[] charArray, int newArrayLength) {
         char[] newCharArray = new char[newArrayLength];
         int j = 0;
         for (int i = 0; i < newArrayLength; i++) {
             newCharArray[i] = charArray[j];
-            if (newCharArray[i] == 'a') {
-                newCharArray[i + 1] = 'b';
+            if (newCharArray[i] == Constants.LETTER_A) {
+                newCharArray[i + 1] = B_LETTER;
                 i++;
             }
             j++;
@@ -40,7 +37,7 @@ public class LessonEightTaskTwo {
         return newCharArray;
     }
 
-    private static String charArrayToString(char[] newCharArray) {
+    private String charArrayToString(char[] newCharArray) {
         StringBuilder refactoringString = new StringBuilder();
         for (char element : newCharArray) {
             refactoringString.append(element);
@@ -48,8 +45,8 @@ public class LessonEightTaskTwo {
         return refactoringString.toString();
     }
 
-    private static void run() {
-        String userString = EnterString();
+    void run() {
+        String userString = enterString();
         char[] charArray = userString.toCharArray();
         int newArrayLength = findNewArrayLength(charArray);
         char[] newCharArray = refactorCharArray(charArray, newArrayLength);

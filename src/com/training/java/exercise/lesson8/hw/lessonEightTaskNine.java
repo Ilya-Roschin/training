@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class lessonEightTaskNine {
 
+    private static final int LOWER_BOUND_SMALL_LETTERS = 97;
+    private static final int UPPER_BOUND_SMALL_LETTERS = 122;
+    private static final int LOWER_BOUND_BIG_LETTERS = 65;
+    private static final int UPPER_BOUND_BIG_LETTERS = 90;
+
     public static void main(String[] args) {
 
         run();
-    }
-
-
-    private static void outputResult(int[] numbersSymbols) {
-        System.out.println("Lower symbols: " + numbersSymbols[0] + "\n" + "Upper symbols: " + numbersSymbols[1]);
     }
 
     private static int[] findNumberSymbols(String userString) {
@@ -20,9 +20,11 @@ public class lessonEightTaskNine {
         int numberUpperSymbols = 0;
 
         for (int i = 0; i < userString.length(); i++) {
-            if ((int) userString.charAt(i) >= 65 && (int) userString.charAt(i) <= 90) {
+            if ((int) userString.charAt(i) >= LOWER_BOUND_BIG_LETTERS &&
+                    (int) userString.charAt(i) <= UPPER_BOUND_BIG_LETTERS) {
                 numberUpperSymbols++;
-            } else if ((int) userString.charAt(i) >= 97 && (int) userString.charAt(i) <= 122) {
+            } else if ((int) userString.charAt(i) >= LOWER_BOUND_SMALL_LETTERS &&
+                    (int) userString.charAt(i) <= UPPER_BOUND_SMALL_LETTERS) {
                 numberLowerSymbols++;
             }
         }
@@ -39,6 +41,6 @@ public class lessonEightTaskNine {
     private static void run() {
         String userString = enterString();
         int[] numbersSymbols = findNumberSymbols(userString);
-        outputResult(numbersSymbols);
+        System.out.println("Lower symbols: " + numbersSymbols[0] + "\n" + "Upper symbols: " + numbersSymbols[1]);
     }
 }
