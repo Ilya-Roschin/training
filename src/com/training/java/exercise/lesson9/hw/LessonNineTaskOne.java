@@ -78,9 +78,4 @@ public class LessonNineTaskOne {
         }
         return charArray;
     }
-
-
-
-
-
 }

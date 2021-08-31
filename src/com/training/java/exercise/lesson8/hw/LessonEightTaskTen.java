@@ -8,10 +8,7 @@ public class LessonEightTaskTen {
     private static final char EXCLAMATION_POINT = '!';
     private static final char POINT = '.';
 
-    public static void main(String[] args) {
 
-        run();
-    }
 
     private static int findNumberSentence(String userString) {
         int numberSentence = 0;

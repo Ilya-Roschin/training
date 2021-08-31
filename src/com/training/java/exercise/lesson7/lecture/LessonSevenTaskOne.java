@@ -20,7 +20,7 @@ public class LessonSevenTaskOne {
 
         //Scanner scanner = new Scanner(System.in);
         while (true) {
-            int userNumber = 5;
+            int userNumber = enterNumber();
             if (userNumber == guessNumber) {
                 System.out.println("You guessed");
                 break;
@@ -55,5 +55,14 @@ public class LessonSevenTaskOne {
         scanner.close();
         return new int[]{lowerBound, upperBound};
     }
+
+     private static int enterNumber() {
+        Scanner sc = new Scanner(System.in);
+        int userNumber = sc.nextInt();
+        sc.close();
+        return userNumber;
+     }
+
+
 
 }

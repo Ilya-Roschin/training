@@ -11,10 +11,8 @@ public class LessonNineTaskThree {
         System.out.println(result);
     }
 
-
     public static int opposite(int number) {
-        int result = number != 0 ? -number : number;
-        return result;
+        return number != 0 ? -number : number;
     }
 
     private static int enterNumber() {
