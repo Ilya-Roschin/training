@@ -18,51 +18,50 @@ import java.util.Scanner;
  * String object alphabetically follows the argument string. The result is zero if the strings are identical.
  * This is exactly what you need to compare 2 strings alphabetically!
  */
-public class TaskEight {
-
-    public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-        String string = scanner.nextLine();
-        String[] stringArray = fillStringArray(string);
-
-
-    }
-
-    private static int findArraySize(String string) {
-        int arraySize = 1;
-        for (int i = 0; i < string.length(); i++) {
-           if (string.charAt(i) == ' ') {
-               arraySize++;
-           }
-        }
-        return arraySize;
-    }
-
-    private static String[] fillStringArray(String string) {
-        int arraySize = findArraySize(string);
-        String[] arrayString = new String[arraySize];
-        int j = 0;
-        for (int i = 0; i < arraySize; i++) {
-            if (string.charAt(i) != ' ') {
-                String temp =string.charAt(i);
-
-                arrayString[j] += temp;
-            } else {
-                j++;
-            }
-        }
-        return arrayString;
-    }
-
-    private static boolean isAlphabeticalOrderInArray(String[] list) {
-        int j = 0;
-      for (int i = 1; i < list.length; i++) {
-          if (list[i].length() )
-      }
-
-
-    }
-
-
-}
+//public class TaskEight {
+//
+//    public static void main(String[] args) {
+//
+//        Scanner scanner = new Scanner(System.in);
+//        String string = scanner.nextLine();
+//        int [] [] arrayAlphabeticalNumbers = fillStringArray(string);
+//
+//
+//    }
+//
+//    private static int findArraySize(String string) {
+//        int arraySize = 1;
+//        for (int i = 0; i < string.length(); i++) {
+//           if (string.charAt(i) == ' ') {
+//               arraySize++;
+//           }
+//        }
+//        return arraySize;
+//    }
+//
+//    private static String[] fillStringArray(String string) {
+//        int arraySize = findArraySize(string);
+//        int [] [] arrayAlphabeticalNumbers = new String[arraySize];
+//        int j = 0;
+//        for (int i = 0; i < arraySize; i++) {
+//            if (string.charAt(i) != ' ') {
+//                int temp = string.charAt(i);
+//                arrayString[j] += temp;
+//            } else {
+//                j++;
+//            }
+//        }
+//        return arrayString;
+//    }
+//
+//    private static boolean isAlphabeticalOrderInArray(String[] list) {
+//        int j = 0;
+//      for (int i = 1; i < list.length; i++) {
+//          if (list[i].length() )
+//      }
+//
+//
+//    }
+//
+//
+//}
