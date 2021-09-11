@@ -1,4 +1,4 @@
-package com.training.java.exercise.lesson13.task2.models;
+package com.training.java.exercise.lesson13.task2.model;
 
 public class Student {
 

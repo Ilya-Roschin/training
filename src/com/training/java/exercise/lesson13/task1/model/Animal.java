@@ -1,4 +1,4 @@
-package com.training.java.exercise.lesson13.task1.models;
+package com.training.java.exercise.lesson13.task1.model;
 
 public class Animal {
 

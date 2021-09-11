@@ -1,10 +1,10 @@
 package com.training.java.exercise.lesson13.task1;
 
-import com.training.java.exercise.lesson13.task1.models.Animal;
-import com.training.java.exercise.lesson13.task1.models.Cat;
-import com.training.java.exercise.lesson13.task1.models.Dog;
-import com.training.java.exercise.lesson13.task1.models.Horse;
-import com.training.java.exercise.lesson13.task1.models.Veterinarian;
+import com.training.java.exercise.lesson13.task1.model.Animal;
+import com.training.java.exercise.lesson13.task1.model.Cat;
+import com.training.java.exercise.lesson13.task1.model.Dog;
+import com.training.java.exercise.lesson13.task1.model.Horse;
+import com.training.java.exercise.lesson13.task1.model.Veterinarian;
 
 public class Main {
 
