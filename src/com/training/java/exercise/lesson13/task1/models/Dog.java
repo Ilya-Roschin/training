@@ -2,7 +2,7 @@ package com.training.java.exercise.lesson13.task1.models;
 
 public class Dog extends Animal {
 
-    public static final String ANIMAL_NAME = "Dog";
+    private static final String ANIMAL_NAME = "Dog";
 
     public Dog(int food, int location) {
         super(food, location);
