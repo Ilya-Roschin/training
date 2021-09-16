@@ -1,9 +1,11 @@
 package com.training.java.exercise.lesson13.task1.model;
 
-public class Animal {
+import com.training.java.exercise.lesson13.task1.Info;
+
+public class Animal implements Info {
 
     protected int food;
-    private final int location;
+    protected final int location;
     private static final String DEFAULT_NAME = "Animal";
 
     public Animal(int food, int location) {
@@ -33,5 +35,10 @@ public class Animal {
 
     public void sleep() {
         System.out.println("This animal sleep");
+    }
+
+    @Override
+    public void showInfo() {
+        System.out.println(DEFAULT_NAME + "\n" + "food: " + food + "\n" + "location: " + location);
     }
 }

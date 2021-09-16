@@ -22,4 +22,9 @@ public class Dog extends Animal {
     public String getAnimalName() {
         return ANIMAL_NAME;
     }
+
+    @Override
+    public void showInfo() {
+        System.out.println(ANIMAL_NAME + "\n" + "food: " + food + "\n" + "location: " + location);
+    }
 }

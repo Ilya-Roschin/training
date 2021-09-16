@@ -10,12 +10,19 @@ public class Main {
 
     public static void main(String[] args) {
         Animal[] animals = init();
-        Veterinarian veterinarian = new Veterinarian();
+        //Veterinarian veterinarian = new Veterinarian();
 
-       //Arrays.stream(animals).forEach(veterinarian::treatAnimal);
+        animals[0].showInfo();
+        animals[1].showInfo();
+        animals[2].showInfo();
+
+
+/*
+        Arrays.stream(animals).forEach(veterinarian::treatAnimal);
         for (Animal element : animals) {
             veterinarian.treatAnimal(element);
         }
+*/
     }
 
     public static Animal[] init() {
