@@ -1,12 +1,10 @@
 package com.training.java.exercise.lesson16.hw.menu;
 
 
-import com.training.java.exercise.lesson15.project.menu.ApplicationMenu;
-import com.training.java.exercise.lesson16.hw.reader.Reader;
 import com.training.java.exercise.lesson16.hw.model.User;
+import com.training.java.exercise.lesson16.hw.reader.Reader;
 import com.training.java.exercise.lesson16.hw.storage.Storage;
 
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -36,6 +34,7 @@ public class Menu {
             }
         }
     }
+
     static {
         REGEX_FOR_PHONE_NUMBERS = "\\d{5}\\u0020\\d{7}";
         REGEX_FOR_EMAIL = "^[_A-Za-z0-9-]+(\\.[_A-Za-z0-9-]+)*@ [A-Za-z0-9]+" +
